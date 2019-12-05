@@ -1,4 +1,4 @@
-.nav {
+.site-nav {
     text-align: right;
     padding-top: 0.5em;
 
@@ -10,20 +10,21 @@
         padding: 0;
         margin: 0;
 
-        @include bp(desktop) {
-            display: flex;
-        }
-
         li {
             display: block;
             margin: 0 0.7em;
-            transform: translate(0, -0.2em);
+            transform: translate(0, -5em);
             opacity: 0;
-            transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+            position: relative;
+            transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 
             .loaded & {
                 opacity: 1;
                 transform: translate(0, 0);
+            }
+
+            &:hover > ul {
+                display: block;
             }
 
             @for $i from 1 through 9 {
@@ -31,40 +32,68 @@
             }
 
         }
+
+        @include bp(desktop) {
+            
+            ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 1000;
+                background: #369;
+                border-radius: 0.3em;
+                padding: 0.8em 0;
+
+                ul {
+                    top: -0.8em;
+                    left: 100%;
+                }
+
+                a {
+                    color: #FFF;
+                }
+
+                li:hover > a,
+                a:hover {
+                    background: #FFF;
+                    color: #369;
+                }
+            }
+        }
+    }
+
+    & > ul {
+        @include bp(desktop) {
+            display: flex;
+        }
     }
 
     a {
         display: flex;
         padding: 0.5em 1em;
-        background: #EEE;
-        color: #333;
+        color: #369;
         text-decoration: none;
-        border-radius: 8%;
-        transition: ease-in 0.2s;
+        border-radius: 0.3em;
+        outline: none;
+    }
 
-        &:before {
-            display: block;
-            margin-right: 0.5em;
-            font-weight: 900;
-        }
-        
-        @at-root .nav .current-page a,
-        &:hover {
-            transition: background 0.3s ease-in;
-            background: rgba(141, 70, 255, 0.46);
-            color: #FFF;
-        }
-    
+    li:hover > a,
+    .current-page > a,
+    a:focus,
+    a:hover {
+        background: #369;
+        color: #FFF;
     }
 
 }
 
-.nav-toggle {
+.site-nav-toggle {
     position: absolute;
     pointer-events: none;
     opacity: 0;
 
-    &:checked + .site .site-header .nav {
+    &:checked + .site .site-header .site-nav {
         @include bp(mobile) {
             display: block;
         }
@@ -77,11 +106,4 @@
         }
 
     }
-}
-
-.nav-toggle-label {
-    border-radius: 0.2em;
-    background-color: #CCC;
-    color: black;
-    padding: 0.6em 2em;
 }

@@ -1,49 +1,12 @@
-body {
-    background: rgba(141, 70, 255, 0.07);
+.site-wrapper {
+	max-width: 75rem;
+	margin: 0 auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
-.site {
-    max-width: var(--layout-width, 60em);
-    margin: 0 auto;
-}
-
-.site-header {
-
-    @include bp(mobile) {
-
-    }
-    
-    @include bp(desktop) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-.card {
-    border: 2px solid #CCC;
-}
-
-.card p {
-    display: none;
-}
-
-.card p:first-of-type {
-    display: block;
-}
-
-.card .button .less {
-    display: none;
-}
-
-input:checked + .card p {
-    display: block;
-}
-
-input:checked + .card .button .more {
-    display: none;
-}
-
-input:checked + .card .button .less {
-    display: inline;
+.site-media img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
