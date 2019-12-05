@@ -1,0 +1,87 @@
+.nav {
+    text-align: right;
+    padding-top: 0.5em;
+
+    @include bp(mobile) {
+        display: none;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        @include bp(desktop) {
+            display: flex;
+        }
+
+        li {
+            display: block;
+            margin: 0 0.7em;
+            transform: translate(0, -0.2em);
+            opacity: 0;
+            transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+
+            .loaded & {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+
+            @for $i from 1 through 9 {
+                &:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
+            }
+
+        }
+    }
+
+    a {
+        display: flex;
+        padding: 0.5em 1em;
+        background: #EEE;
+        color: #333;
+        text-decoration: none;
+        border-radius: 8%;
+        transition: ease-in 0.2s;
+
+        &:before {
+            display: block;
+            margin-right: 0.5em;
+            font-weight: 900;
+        }
+        
+        @at-root .nav .current-page a,
+        &:hover {
+            transition: background 0.3s ease-in;
+            background: rgba(141, 70, 255, 0.46);
+            color: #FFF;
+        }
+    
+    }
+
+}
+
+.nav-toggle {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+
+    &:checked + .site .site-header .nav {
+        @include bp(mobile) {
+            display: block;
+        }
+    }
+    
+    &-label {
+
+        @include bp(desktop) {
+            display: none;
+        }
+
+    }
+}
+
+.nav-toggle-label {
+    border-radius: 0.2em;
+    background-color: #CCC;
+    color: black;
+    padding: 0.6em 2em;
+}
