@@ -1,5 +1,5 @@
 {
-  "name": "naskou.github.io",
+  "name": "css-advanced",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naksou/naskou.github.io.git"
+    "url": "git+https://github.com/naksou/css-advanced.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/naskou/naskou.github.io/issues"
+    "url": "https://github.com/naskou/css-advanced/issues"
   },
-  "homepage": "https://github.com/naskou/naskou.github.io#readme"
+  "homepage": "https://github.com/naskou/css-advanced#readme"
 }
