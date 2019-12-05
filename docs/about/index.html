@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <title>
         
-            About - Refactor.inc
+        About - Refactor.inc
         
     </title>
     <script>
@@ -18,18 +18,18 @@
             document.querySelector('body').classList.add('loaded');
         });
     </script>
-
     <link rel="stylesheet" href="/css/site.css">
 </head>
 <body class="page-about">
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <div class="site">
+<input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
+<div class="site">
 
-        <header class="site-header">
-            
+    <header class="site-header">
+        <div class="site-wrapper">
             <div class="site-branding">
-                <h1><a href="/">Refactor.inc</a></h1>
+                <h1 class="site-title"><a href="/">Refactor.inc</a></h1>
+                <p>Cannot explain.</p>
             </div>
 
             <label for="nav-toggle" class="nav-toggle-label">Menu</label>
@@ -46,35 +46,28 @@
         
 
         <li class="page-title-home">
-            <a href="/">Home</a>
-        </li>
-        
-    
-        
-
-        <li class="page-title-gallery">
-            <a href="/gallery/">Gallery</a>
+            <a href="//">Home</a>
         </li>
         
     
         
 
         <li class="page-title-services">
-            <a href="/services/">Services</a>
+            <a href="//services/">Services</a>
         </li>
         
     
         
 
         <li class="page-title-about current-page">
-            <a href="/about/">About</a>
+            <a href="//about/">About</a>
         </li>
         
     
         
 
         <li class="page-title-contacts">
-            <a href="/contacts/">Contacts</a>
+            <a href="//contacts/">Contacts</a>
         </li>
         
     
@@ -82,12 +75,12 @@
 
     
 </nav>
-        </header>
+        </div>
+    </header>
+    
 
-        <main class="site-main">
-            
-            <h1>About</h1>
-
+    <main class="site-content">
+        <div class="site-wrapper">
             <input type="checkbox" name="card_id_1_more" id="card_id_1_more" >
 <section class="card">
 
@@ -119,13 +112,36 @@
     </label>
         
 </section>
+        </div>
+    </main>
 
-        </main>
+    <footer class="site-footer">
+        <div class="site-wrapper">
 
-        <footer class="site-footer">
-            <p>Refactor.inc &copy; All rights reserved</p>
-        </footer>
-    </div>
-    
+            <div class="info">
+                <p>Refactor.inc</p>
+                <p>A sleek, modern Jekyll theme for personal websites.</p>
+                <p>&copy; 2019 Personal Jekyll Themes</p>
+            </div>
+
+            <ul class="social">
+                <li>
+                    <a href="#">F</a>
+                </li>
+                <li>
+                    <a href="#">T</a>
+                </li>
+                <li>
+                    <a href="#">L</a>
+                </li>
+                <li>
+                    <a href="#">I</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+</div>
+
 </body>
 </html>
