@@ -1,11 +1,13 @@
 title: Refactor.Inc
 email: andonov.atanas98@gmail.com
-description: Cannot explain
+description: Recreate in my own way!
 destination: docs
 baseurl: "/css-advanced"
 url: ""
 twitter_username: naskou
-github_username: naskou
+facebook_username: https://www.facebook.com/profile.php?id=100008484766616
+github_username: https://github.com/naskou
+wesaturate_username: https://www.wesaturate.com/naskou
 
 # Build settings
 markdown: kramdown
