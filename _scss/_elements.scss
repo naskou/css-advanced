@@ -23,14 +23,25 @@
 }
 
 .social a:hover {
-	background: rgba(51, 102, 153, 0.75);
+	//background: rgba(51, 102, 153, 0.75);
 	transition: ease-in 0.3s;
 	color: #FFF;
 	transform: scale(1.2);
 }
-
-
-
+.social {
+	a.facebook:hover {
+		background-color:#3b5998
+	}
+	a.github:hover {
+		background-color:#24292E;
+	}
+	a.wesaturate:hover {
+		background-color:#ea4c89
+	}
+	a.linkedin:hover {
+		background-color:#007bb6
+	}
+}
 
 .tooltip {
 	position: relative;
