@@ -19,8 +19,12 @@
 	height: 2.8em;
 	line-height: 1;
 	transition: background 0.2s ease-in;
+	transition: 0.3s ease-in;
 }
 
 .social a:hover {
-	background: rgba(255,255,255,0.9);
+	background: rgba(51, 102, 153, 0.75);
+	transition: ease-in 0.3s;
+	color: #FFF;
+	transform: scale(1.2);
 }
