@@ -28,3 +28,35 @@
 	color: #FFF;
 	transform: scale(1.2);
 }
+
+
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	font-size: 0.8em;
+	width: 5.4em;
+	background-color: #AAAAAA;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.5em;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	margin-left: -2.9em;
+}
+
+.tooltip:hover .tooltiptext {
+	margin-top: 0.2em;
+	visibility: visible;
+}

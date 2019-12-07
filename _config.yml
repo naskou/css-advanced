@@ -9,6 +9,8 @@ facebook_username: https://www.facebook.com/profile.php?id=100008484766616
 github_username: https://github.com/naskou
 wesaturate_username: https://www.wesaturate.com/naskou
 
+font-awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css
+
 # Build settings
 markdown: kramdown
 plugins:
