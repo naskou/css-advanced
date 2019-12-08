@@ -11,6 +11,7 @@
 }
  .site-wrapper {
 	display: block;
+
 	 .row {
 		 display: flex;
 	 }
@@ -33,12 +34,12 @@
 	}
 }
 .site-wrapper .container .row {
-	display: block;
-	width: 100%;
-	padding-top: 1em;
-	.right {
-		margin-top: -1.8em;
-	}
+	display: flex;
+	justify-content: space-between;
+	//media - 768px
+	//display: block;
+	//width: 100%;
+	padding: 1em 0 0 0;
 }
 
 .site-footer a {
