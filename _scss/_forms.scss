@@ -8,11 +8,12 @@ form {
     input[type="text"],
     input[type="tel"],
     input[type="email"],
-    input[type="password"] {
+    input[type="password"],
+    textarea {
         display: block;
         border: 1px solid #CCC;
         padding: 0.5em 0.8em;
-        border-radius: 0.3em;
+        border-radius: 0.4em;
         outline: none;
 
         &:focus {
@@ -66,4 +67,23 @@ form {
 
     }
 
+}
+.map-form {
+    display: flex;
+    justify-content: space-between;
+}
+.direct-message {
+    width: 40%;
+    margin-top: 2.5em;
+
+    .field {
+        label {
+            order: 1;
+            display: block;
+            padding-bottom: 0.2em;
+        }
+        textarea {
+            order: 2;
+        }
+    }
 }
