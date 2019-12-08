@@ -1,5 +1,41 @@
 .page-about {
+    .site-media h2 {
+        margin-top: -6em;
+    }
 
+    .card h3 {
+        margin: 0.5em 0 0.5em 0;
+    }
+
+    .about .title {
+        font-weight: 400;
+        padding-bottom: 0.4em;
+
+    }
+    .about .title em {
+        font-weight: 500;
+    }
+    .about p {
+        transition: ease-in 0.3s;
+    }
+    .about p:hover {
+        transition: ease-in 0.3s;
+        transform: scale(1.07);
+    }
+    .about .first {
+        padding-top: 1em;
+    }
+    .option-more {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 0 3em 0;
+        & a {
+            padding: 1em;
+            color: #FFF;
+            background-color: #369;
+            border-radius: 10%;
+        }
+    }
 }
 
 .page-home {
