@@ -139,3 +139,8 @@
 		font-weight:600
 	}
 }
+@include bp(phone) {
+	.text-justify2 {
+		display: none;
+	}
+}
