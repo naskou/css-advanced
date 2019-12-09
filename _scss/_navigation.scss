@@ -98,10 +98,18 @@
     &:checked + .site .site-header .site-nav {
         @include bp(mobile) {
             display: block;
+            margin: 1em;
         }
     }
     
     &-label {
+
+        @include bp(mobile) {
+            border-radius: 0.3em;
+            color: white;
+            padding: 0.35em 0.5em;
+            background-color: #369;
+        }
 
         @include bp(desktop) {
             display: none;

@@ -131,7 +131,7 @@
 .social-icons a.wesaturate:hover {
 	background-color:#ea4c89;
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
 	.social-icons li.title
 	{
 		display:block;
@@ -145,5 +145,9 @@
 	}
 	.site-footer {
 		font-size: 13px;
+		
+		.container .row {
+			display: block;
+		}
 	}
 }

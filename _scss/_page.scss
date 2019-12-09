@@ -1,6 +1,7 @@
 .page-about {
     .site-media h2 {
         margin-top: -6em;
+
     }
 
     .card h3 {
@@ -42,6 +43,18 @@
     .site-media {
         height: 75vh;
         justify-content: center;
+    }
+    .site-media {
+        @include bp(mobile) {
+            height: 50vh;
+        }
+    }
+
+    .site-wrapper {
+        @include bp(mobile) {
+            font-size: 12px;
+            font-weight: 500;
+        }
     }
 }
 
