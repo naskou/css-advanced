@@ -17,6 +17,13 @@
 .site-title {
 	padding: 0;
 	font-weight: 500;
+	a {
+		color: #CCC;
+	}
+}
+
+.site-branding p {
+	color: #DDD;
 }
 
 .site-media {
@@ -48,9 +55,9 @@
 	color: #FFF;
 	position: relative;
 	z-index: 10;
-	font-size: 1.6em;
+	font-size: 1.5em;
 	padding-top: 2rem;
-	padding-bottom: 5rem;
+	//padding-bottom: 5rem;
 
 	@include bp(desktop) {
 		padding-right: 10em;

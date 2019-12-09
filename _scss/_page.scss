@@ -1,7 +1,13 @@
 .page-about {
+    .site-media {
+        margin-top: -10.4rem;
+    }
     .site-media h2 {
-        margin-top: -6em;
+        margin-top: -2em;
 
+        @include bp(phone) {
+            margin-top: -4em;
+        }
     }
 
     .card h3 {
@@ -41,6 +47,7 @@
 
 .page-home {
     .site-media {
+        margin-top: -10.4rem;
         height: 75vh;
         justify-content: center;
     }
@@ -59,6 +66,34 @@
 }
 
 .page-contacts {
+    .site-title a {
+        color: #369;
+    }
+    .site-branding p {
+        color: black;
+    }
+    .site-nav {
+        a {
+            display: flex;
+            font-size: 1.1em;
+            transition: 0.3s ease-in;
+            padding: 0.5em 1em;
+            color: #369;
+            text-decoration: none;
+            border-radius: 0.3em;
+            outline: none;
+        }
+        
+        li:hover > a,
+        .current-page > a,
+        a:focus,
+        a:hover {
+            transition: 0.3s ease-in;
+            background: #369;
+            color: #FFF;
+        }
+    }
+
     .ssites {
         font-size: 1.4em;
         font-weight: 600;
@@ -78,5 +113,34 @@
         margin: 1.5em 0 2em 0;
         border-radius: 2%;
         box-shadow: 0 0 1.1em #147;
+    }
+}
+.page-services {
+    .site-title a {
+        color: #369;
+    }
+    .site-branding p {
+        color: black;
+    }
+    .site-nav {
+        a {
+            display: flex;
+            font-size: 1.1em;
+            transition: 0.3s ease-in;
+            padding: 0.5em 1em;
+            color: #369;
+            text-decoration: none;
+            border-radius: 0.3em;
+            outline: none;
+        }
+
+        li:hover > a,
+        .current-page > a,
+        a:focus,
+        a:hover {
+            transition: 0.3s ease-in;
+            background: #369;
+            color: #FFF;
+        }
     }
 }

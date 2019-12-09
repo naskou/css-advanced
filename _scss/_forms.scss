@@ -1,3 +1,36 @@
+.page-login {
+    .site-wrapper h2 {
+        margin-bottom: 1.6em;
+    }
+    .site-branding p {
+        color: black;
+    }
+    .site-title a {
+        color: #369;
+    }
+    .site-nav {
+        a {
+            display: flex;
+            font-size: 1.1em;
+            transition: 0.3s ease-in;
+            padding: 0.5em 1em;
+            color: #369;
+            text-decoration: none;
+            border-radius: 0.3em;
+            outline: none;
+        }
+
+        li:hover > a,
+        .current-page > a,
+        a:focus,
+        a:hover {
+            transition: 0.3s ease-in;
+            background: #369;
+            color: #FFF;
+        }
+    }
+}
+
 form {
     
     label {
