@@ -104,10 +104,18 @@ form {
 .map-form {
     display: flex;
     justify-content: space-between;
+    @include bp(tablet) {
+        display: block;
+    }
 }
 .direct-message {
     width: 40%;
     margin-top: 2.5em;
+    @include bp(tablet) {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
 
     .field {
         label {
