@@ -66,34 +66,6 @@
 }
 
 .page-contacts {
-    .site-title a {
-        color: #369;
-    }
-    .site-branding p {
-        color: black;
-    }
-    .site-nav {
-        a {
-            display: flex;
-            font-size: 1.1em;
-            transition: 0.3s ease-in;
-            padding: 0.5em 1em;
-            color: #369;
-            text-decoration: none;
-            border-radius: 0.3em;
-            outline: none;
-        }
-        
-        li:hover > a,
-        .current-page > a,
-        a:focus,
-        a:hover {
-            transition: 0.3s ease-in;
-            background: #369;
-            color: #FFF;
-        }
-    }
-
     .ssites {
         font-size: 1.4em;
         font-weight: 600;
@@ -115,7 +87,46 @@
         box-shadow: 0 0 1.1em #147;
     }
 }
-.page-services {
+.page-home,
+.page-about {
+    @include bp(mobile) {
+        .site-media {
+            margin-top: 0;
+        }
+        .site-title a {
+            color: #369;
+        }
+        .site-branding p {
+            color: black;
+        }
+        .site-nav {
+            a {
+                display: flex;
+                font-size: 1.1em;
+                transition: 0.3s ease-in;
+                padding: 0.5em 1em;
+                color: #369;
+                text-decoration: none;
+                border-radius: 0.3em;
+                outline: none;
+            }
+
+            li:hover > a,
+            .current-page > a,
+            a:focus,
+            a:hover {
+                transition: 0.3s ease-in;
+                background: #369;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.page-contacts,
+.page-services,
+.page-gallery,
+.page-login {
     .site-title a {
         color: #369;
     }
