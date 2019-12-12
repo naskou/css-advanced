@@ -22,6 +22,14 @@
     .about .title em {
         font-weight: 500;
     }
+    hr {
+        opacity: 1;
+        margin-top: 0.3em;
+    }
+    em {
+        font-size: 2.2em;
+        font-weight: 400;
+    }
     .about p {
         transition: ease-in 0.3s;
     }
@@ -35,13 +43,14 @@
     .option-more {
         display: flex;
         justify-content: space-between;
-        padding: 2em 0 3em 0;
-        & a {
-            padding: 1em;
-            color: #FFF;
-            background-color: #369;
-            border-radius: 10%;
-        }
+    }
+    #more {
+        display: none;
+    }
+    #myBtn {
+        margin-bottom: 2em;
+        padding: 0.5em;
+        border-radius: 10%;
     }
 }
 
