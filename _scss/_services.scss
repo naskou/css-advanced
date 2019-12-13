@@ -6,7 +6,6 @@
   .site-media p {
     text-align: center;
   }
-
   @include bp(desktop) {
     .site-media .site-wrapper {
       padding: 5em 0 0 0;
@@ -37,7 +36,6 @@
         border-radius: 0.3em;
         outline: none;
       }
-
       li:hover > a,
       .current-page > a,
       a:focus,

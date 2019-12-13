@@ -1,13 +1,11 @@
 .social {
 	display: flex;
 }
-
 .social li {
 	display: block;
 	list-style: none outside;
 	margin-right: 1em;
 }
-
 .social a {
 	display: flex;
 	justify-content: center;
@@ -21,9 +19,7 @@
 	transition: background 0.2s ease-in;
 	transition: 0.3s ease-in;
 }
-
 .social a:hover {
-	//background: rgba(51, 102, 153, 0.75);
 	transition: ease-in 0.3s;
 	color: #FFF;
 	transform: scale(1.2);
@@ -42,13 +38,11 @@
 		background-color:#007bb6
 	}
 }
-
 .tooltip {
 	position: relative;
 	display: inline-block;
 	border-bottom: 1px dotted black;
 }
-
 .tooltip .tooltiptext {
 	visibility: hidden;
 	font-size: 0.8em;
@@ -59,14 +53,12 @@
 	border-radius: 0.5em;
 	padding: 5px 0;
 
-	/* Position the tooltip */
 	position: absolute;
 	z-index: 1;
 	top: 100%;
 	left: 50%;
 	margin-left: -2.9em;
 }
-
 .tooltip:hover .tooltiptext {
 	margin-top: 0.2em;
 	visibility: visible;

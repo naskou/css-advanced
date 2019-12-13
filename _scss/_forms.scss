@@ -1,42 +1,6 @@
-.page-login {
-    .site-wrapper h2 {
-        margin-bottom: 1.6em;
-    }
-    .site-branding p {
-        color: black;
-    }
-    .site-title a {
-        color: #369;
-    }
-    .site-nav {
-        a {
-            display: flex;
-            font-size: 1.1em;
-            transition: 0.3s ease-in;
-            padding: 0.5em 1em;
-            color: #369;
-            text-decoration: none;
-            border-radius: 0.3em;
-            outline: none;
-        }
-
-        li:hover > a,
-        .current-page > a,
-        a:focus,
-        a:hover {
-            transition: 0.3s ease-in;
-            background: #369;
-            color: #FFF;
-        }
-    }
-}
-
 form {
-    
     label {
-
     }
-
     textarea,
     input[type="text"],
     input[type="tel"],
@@ -48,44 +12,36 @@ form {
         padding: 0.5em 0.8em;
         border-radius: 0.4em;
         outline: none;
-
         &:focus {
             border-color: #090;
-
             & + label {
                 color: #090;
             }
         }
     }
-
     fieldset {
         display: block;
         width: 100%;
         border: 1px solid #CCC;
         padding: 2rem;
-        
         legend {
             padding: 0 1em;
             font-weight: bold;
             font-size: 1.4em;
         }
     }
-
     .field {
         display: flex;
         flex-direction: column;
         padding-bottom: 2em;
-
         label {
             order: 1;
             display: block;
             padding-bottom: 0.2em;
         }
-
         input {
             order: 2;
         }
-
         &.submit {
             input {
                 display: block;
@@ -97,9 +53,7 @@ form {
                 border-radius: 0.3em;
             }
         }
-
     }
-
 }
 .map-form {
     display: flex;
@@ -116,7 +70,6 @@ form {
         margin: 0 auto;
         margin-bottom: 2em;
     }
-
     .field {
         label {
             order: 1;

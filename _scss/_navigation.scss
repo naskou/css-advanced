@@ -1,16 +1,12 @@
 .site-nav {
     text-align: right;
     padding-top: 0.5em;
-
-
     @include bp(mobile) {
         display: none;
     }
-
     ul {
         padding: 0;
         margin: 0;
-
         li {
             display: block;
             margin: 0 0.7em;
@@ -18,24 +14,18 @@
             opacity: 0;
             position: relative;
             transition: opacity 0.3s ease-in, transform 0.3s ease-in;
-
             .loaded & {
                 opacity: 1;
                 transform: translate(0, 0);
             }
-
             &:hover > ul {
                 display: block;
             }
-
             @for $i from 1 through 9 {
                 &:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
             }
-
         }
-
         @include bp(desktop) {
-            
             ul {
                 display: none;
                 position: absolute;
@@ -45,16 +35,13 @@
                 background: #369;
                 border-radius: 0.3em;
                 padding: 0.8em 0;
-
                 ul {
                     top: -0.8em;
                     left: 100%;
                 }
-
                 a {
                     color: #FFF;
                 }
-
                 li:hover > a,
                 a:hover {
                     background: #FFF;
@@ -63,13 +50,11 @@
             }
         }
     }
-
     & > ul {
         @include bp(desktop) {
             display: flex;
         }
     }
-
     a {
         display: flex;
         font-size: 1.1em;
@@ -80,43 +65,34 @@
         border-radius: 0.3em;
         outline: none;
     }
-
     li:hover > a,
     .current-page > a,
     a:focus,
     a:hover {
         transition: 0.3s ease-in;
-        //background: #369;
         box-shadow: inset 0 0 0 1px;
         color: #FFF;
     }
-
 }
-
 .site-nav-toggle {
     position: absolute;
     pointer-events: none;
     opacity: 0;
-
     &:checked + .site .site-header .site-nav {
         @include bp(mobile) {
             display: block;
             margin: 1em;
         }
     }
-    
     &-label {
-
         @include bp(mobile) {
             border-radius: 0.3em;
             color: white;
             padding: 0.35em 0.5em;
             background-color: #369;
         }
-
         @include bp(desktop) {
             display: none;
         }
-
     }
 }
