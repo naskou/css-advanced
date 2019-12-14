@@ -123,9 +123,16 @@
       display: flex;
       justify-content: space-between;
 
+      @include bp(phone) {
+        display: block;
+      }
       p {
         width: 30%;
         padding: 0.2em;
+        @include bp(phone) {
+          width: 100%;
+          margin-bottom: 0.9em;
+        }
 
         strong {
           font-weight: 400;
