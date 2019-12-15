@@ -174,7 +174,7 @@
   font-size: 24px
 }
 
-.shiny button:hover::after,.shiny button:focus::after,.shiny .demo-container.active button::after {
+.shiny button:hover::after,.shiny button:focus::after {
   -webkit-animation: sheen 1s .5s forwards;
   animation: sheen 1s .5s forwards
 }
@@ -188,8 +188,8 @@
   left: -50%;
   background: -webkit-gradient(linear,left top,left bottom,from(rgba(209,112,60,0)),color-stop(50%,rgba(255,255,255,0.5)),to(rgba(209,112,60,0)));
   background: linear-gradient(to bottom,rgba(209,112,60,0),rgba(255,255,255,0.5) 50%,rgba(209,112,60,0));
-  -webkit-transform: rotateZ(60deg) translate(-5em,7.5em);
-  transform: rotateZ(60deg) translate(-5em,7.5em)
+  -webkit-transform: rotateZ(120deg) translate(-5em,7.5em);
+  transform: rotateZ(120deg) translate(-5em,7.5em)
 }
 
 .shiny button.visible {
@@ -202,14 +202,14 @@
 
 @-webkit-keyframes sheen {
   100% {
-    -webkit-transform: rotateZ(60deg) translate(1em,-14em);
-    transform: rotateZ(60deg) translate(1em,-14em)
+    -webkit-transform: rotateZ(120deg) translate(1em,-14em);
+    transform: rotateZ(120deg) translate(1em,-14em)
   }
 }
 
 @keyframes sheen {
   100% {
-    -webkit-transform: rotateZ(60deg) translate(1em,-14em);
-    transform: rotateZ(60deg) translate(1em,-14em)
+    -webkit-transform: rotateZ(120deg) translate(1em,-14em);
+    transform: rotateZ(120deg) translate(1em,-14em)
   }
 }
